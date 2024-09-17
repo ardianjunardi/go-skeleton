@@ -1,0 +1,52 @@
+{
+    "app": {
+        "debug": true,
+        "host": "127.0.0.1:3000",
+        "locale": "id|en",
+        "key": "batman"
+    },
+    "db": {
+        "psql_dsn": "postgres://username:password@hostname:5432/dbname",
+        "redis": {
+            "addr": "hostname:6379",
+            "password": "",
+            "default_db": 0
+        }
+    },
+    "queue": {
+        "rabbitmq": {
+            "host": "amqp://username:password@hostname:5672"
+        }
+    },
+    "log": {
+        "default": "file|sentry",
+        "file": {
+            "source": "storages/logs/errors"
+        },
+        "sentry": {
+            "source": ""
+        }
+    },
+    "upload_path": "./storages/uploads", 
+    "aws": {
+        "s3": {
+            "key": "",
+            "secret": "",
+            "region": "",
+            "bucket": "",
+            "public_url": "",
+            "filepath": "/vereintech/dots/api/uploads"
+        }
+    },
+    "resource_path": "./resources/templates",
+    "mail":{
+        "drive": "smtp",
+        "host": "smtp.gmail.com",
+        "port": 587,
+        "username": "",
+        "password": "",
+        "ecryption": "tls",
+        "mail_from": "do-not-reply@vereintech.com",
+        "mail_name": "mail name"
+    }
+}
